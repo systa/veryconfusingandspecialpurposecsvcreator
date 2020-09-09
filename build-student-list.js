@@ -18,5 +18,9 @@ function tuniid(s) {
     var i = s.indexOf("tuni.fi:");
     if (i < 0)
 	return ("??");
-    return s.substr(i+8);
+    var s1 = s.substr(i+8);
+    i = s-indexOf(" ");
+    if (i > 0)
+	s1 = s1.substr(0,i);
+    return s1;
 }
