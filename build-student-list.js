@@ -19,7 +19,7 @@ function tuniid(s) {
     if (i < 0)
 	return ("??");
     var s1 = s.substr(i+8);
-    i = s.indexOf(" ");
+    i = s1.indexOf(" ");
     if (i > 0)
 	s1 = s1.substr(0,i);
     return s1;
